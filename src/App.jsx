@@ -1,23 +1,17 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Project from "./pages/Project";
 
 export default function App() {
   return (
-    <div className="bg-slate-950 text-white">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="bg-slate-950 text-white min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/:owner/:repo" element={<Project />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
