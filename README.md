@@ -1,63 +1,86 @@
-# Portfolio – Allan Mukabana
+# Portfolio
 
-A modern, responsive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**, showcasing my software engineering projects, experience, and technical skills.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?logo=tailwindcss)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2025-F7DF1E?logo=javascript)
+![GitHub API](https://img.shields.io/badge/API-GitHub_REST-181717?logo=github)
+![License](https://img.shields.io/badge/License-MIT-green)
 
----
+A modern, responsive developer portfolio built with React, Vite, and Tailwind CSS.
 
-##  Live Demo
+The portfolio showcases my software engineering experience, technical skills, and engineering projects across backend systems, distributed applications, data engineering pipelines, graph algorithms, simulations, and real-time applications.
 
- https://yourusername.github.io/portfolio/
-
----
-
-##  Overview
-
-This portfolio is dynamically powered by the GitHub API and automatically displays my latest repositories. It highlights my work in:
-
-- Backend systems engineering
-- Distributed systems
-- Data engineering (ETL pipelines)
-- Graph algorithms & simulations
-- Real-time applications
+The application dynamically integrates with the GitHub API to discover and present projects while providing a clean, responsive interface for exploring my work.
 
 ---
 
-##  Tech Stack
+# Features
 
-**Frontend**
-- React
-- Vite
-- Tailwind CSS
+## Dynamic Project Discovery
 
-**APIs**
-- GitHub REST API
-
-**Tooling**
-- ESLint
-- Git
-- GitHub Pages
+* Fetches repositories automatically from GitHub
+* Filters and organizes projects dynamically
+* Highlights important repositories using project metadata
+* Displays repository statistics and technology information
 
 ---
 
-##  Features
+## Project Showcase
 
--  Auto-fetches GitHub repositories
--  Dynamic project categorization
--  Intelligent project highlighting system
--  Fully responsive design
--  Dark modern UI
--  Direct links to GitHub projects
--  Modular component architecture
+Projects are categorized across engineering domains:
+
+* Backend Systems
+* Distributed Systems
+* Graph Algorithms
+* Data Engineering
+* Real-Time Applications
+* Simulation Systems
+* Data Visualization
+
+Each project provides:
+
+* Repository links
+* Technology stack
+* Engineering highlights
+* Project descriptions
 
 ---
 
-##  Project Structure
+## Responsive Design
+
+* Modern dark-themed interface
+* Mobile-first responsive layout
+* Smooth navigation between sections
+* Accessible component structure
+
+---
+
+## Developer Information
+
+The portfolio includes:
+
+* Professional experience
+* Technical skills
+* Engineering interests
+* Contact information
+* Resume access
+
+---
+
+# Architecture
 
 ```text
-src/
-├── components/
-├── data/
-├── hooks/
-├── utils/
-├── App.jsx
-└── main.jsx
+User
+ ↓
+React Application
+ ↓
+Reusable Components
+ ↓
+GitHub REST API
+ ↓
+Repository Processing Layer
+ ↓
+Project Metadata Enrichment
+ ↓
+Portfolio Presentation
